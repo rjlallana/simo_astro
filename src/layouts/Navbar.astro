@@ -1,0 +1,43 @@
+---
+
+let {title} = Astro.props;
+
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" href={Astro.resolve('../styles/navbar.css')}>
+  <script defer src={Astro.resolve('../scripts/scroll.js')}></script>
+
+
+</head>
+<body>
+  <nav class="navbar">
+    <header>
+      <a class="navbar-header" href="/">
+        <h1>
+          Simona Dumascu
+        </h1>
+        <h2>
+          Character designer and Ilustrator
+        </h2>
+      </a>
+    </header>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/"><em>Work</em></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

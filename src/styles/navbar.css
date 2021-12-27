@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Playfair+Display:ital,wght@1,500;1,800&display=swap');
+@font-face {
+  font-family: "Lacuda";
+  src: url("asssets/Lacuda.ttf") format("truetype");
+}
+.navbar {
+  width: var(--navbar-width);
+  height: 60vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+  
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+.nav-link:hover {
+  color: var(--text-secondary);
+}
+  
+.nav-link {
+  display: flex;
+  padding: 1.5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--text-secondary);
+  text-underline-offset: 0.5rem;
+}
+  
+.navbar-header h1 {
+  font-family: 'Lacuda', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin: 0;
+
+  color: var(--text-primary);
+}
+.navbar-header h2 {
+  font-weight: 100;
+  font-size: 1.25rem;
+
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+  
+.navbar-header:hover {
+  color: var(--text-secondary);
+}
+
+  /* Small screens */
+@media only screen and (max-width: 600px) {
+.navbar {
+  bottom: 0;
+  width: 100vw;
+  height: 5rem;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  justify-content: center;
+}
+}

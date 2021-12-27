@@ -1,0 +1,130 @@
+---
+// Component Imports
+import Navbar from '../layouts/Navbar.astro';
+// You can import components from any supported Framework here!
+
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" href={Astro.resolve('../styles/about.css')}>
+
+</head>
+<body>
+	<Navbar title="Simona Portfolio"></Navbar>
+	<main>
+      <div class="flex-container">
+        <div class="flex-info">
+          <img src="/assets/simo.jpg" alt="img">
+        </div>
+        <div class="flex-info">
+          <h3>
+            <span>About me</span>
+          </h3>
+          <p>
+            Hello. I'm Simona Dumascu, a <em>young artist based in Madrid</em> eager to learn and develop my skills. 
+            My main focus is to work as a character designer, 
+            <em>able to create art assets and maintain the established aesthetic</em>
+             of the characters throughout the production process. 
+             At the same time I can follow the style and guidelines to create original characters.
+            <!-- Motivated Illustrator and character design artist with a passion for story telling.
+            Through my experience I obtained a certain <em>knowledge of anatomy, perspective and composition</em>. I am also fascinated about exploring art styles and expressing emotion. -->
+            <h4>
+              <a href="cv.pdf">My curriculum</a>
+            </h4>
+          </p>
+          <!-- link to my cv -->
+
+          <h3>
+            <span>Skills</span>
+          </h3>
+          <ul>
+            <li>
+              Photoshop
+            </li>
+            <li>
+              Illustrator
+            </li>
+            <li>
+              Traditional painting
+            </li>
+            <li>
+              Figma
+            </li>
+            <li>
+              InDesign
+            </li>
+          </ul>
+          <h3>
+            <span>Education</span>
+          </h3>
+          <h4>
+            Graphic Art @ Faculty of Arts and Design, University of Timișoara
+          </h4>
+          <h5>
+            <it>2017 - 2020</it>
+          </h5>
+        </div>
+        <div class="flex-info">
+          <h3>
+            <span>Experience</span>
+          </h3>
+          <h4>
+            Concept Artist @ Misstep Studio
+          </h4>
+          <h5>
+            <it>December 2021 - Present</it>
+          </h5>
+          <p>
+            An <em>indie videogame studio based in Barcelona</em> working on Death by Misstep, First-Person Horror / Stealth and Rhythm video game.
+          </p>
+          <h4>
+            Freelance Artist
+          </h4>
+          <h5>
+            <it>June 2021 - Present</it>
+          </h5>
+          <p>
+            Commission work for different individuals and groups through the <a href="https://www.upwork.com/freelancers/~01bd75f1e3119f7caf?p=1451172323774455808">Upwork</a> platform.
+            Commision work for the software company <a href="https://xvision.app/">XVision</a>.
+          </p>
+          <h4>
+            Graphic design @ Liga AC, University of Timișoara
+          </h4>
+          <h5>
+            <it>2018 - 2020</it>
+          </h5>
+          <p>
+            Experience in designing projects campaigns: social media posts, posters, press
+            ads, outdoor, flyers, invitations, web graphics. Main organizer of several international student projects.
+          </p>
+        </div>
+        
+      </div>
+
+	</main>
+
+		<!--
+
+		You can also use imported framework components directly in your markup!
+		
+		Note: by default, these components are NOT interactive on the client.
+		The `:visible` directive tells Astro to make it interactive.
+		
+		See https://docs.astro.build/core-concepts/component-hydration/ 
+
+		-->
+
+</body>
+</html>

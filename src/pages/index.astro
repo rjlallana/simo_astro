@@ -1,6 +1,6 @@
 ---
 // Component Imports
-import Tour from '../components/Tour.astro';
+import Navbar from '../layouts/Navbar.astro';
 // You can import components from any supported Framework here!
 
 
@@ -8,7 +8,6 @@ import Tour from '../components/Tour.astro';
 // You can write any JavaScript/TypeScript that you'd like here.
 // It will run during the build, but never in the browser.
 // All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -17,31 +16,80 @@ let title = 'My Astro Site';
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
 
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
-	<link rel="stylesheet" href={Astro.resolve('../styles/home.css')}>
+	<link rel="stylesheet" href={Astro.resolve('../styles/main.css')}>
 
-	<style>
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			max-width: min(100%, 68ch);
-		}
-	</style>
 </head>
 <body>
+	<Navbar title="Simona Portfolio"></Navbar>
 	<main>
-		<header>
-			<div>
-				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-			</div>
-		</header>
-
-		<Tour />
+    <div class="flex-container">
+      <div class="flex-image">
+        <img src="assets/character_design/8.jpg" alt="img">
+        <figcaption>
+          <h4>
+            Character design
+          </h4>
+          <p>
+            Collection of characters and illustrations in different styles and inspirations.
+          </p>
+          <a href="character_design">
+            <i>
+              Show more
+            </i>
+          </a>
+        </figcaption>
+      </div>
+      <div class="flex-image">
+        <img src="assets/portraits/7.jpg" alt="img">
+        <figcaption>
+          <h4>
+            Portraits
+          </h4>
+          <p>
+            Sample of different commissions and personal work.          </p>
+          <a href="portraits">
+            <i>
+              Show more
+            </i>
+          </a>
+        </figcaption>
+      </div>
+      <div class="flex-image">
+        <img src="/assets/enviroment/11.jpg" alt="img">
+        <figcaption>
+          <h4>
+            Enviromental Art
+          </h4>
+          <p>
+            Design of enviromental art pieces and details.
+          </p>
+          <a href="enviroment">
+            <i>
+              Show more
+            </i>
+          </a>
+        </figcaption>
+      </div>
+      <div class="flex-image">
+        <img src="/assets/thesis/5.jpg" alt="img">
+        <figcaption>
+          <h4>
+            Thesis
+          </h4>
+          <p>
+            A character design interpretation of the main characters from the novel Dune
+          </p>
+          <a href="thesis">
+            <i>
+              Show more
+            </i>
+          </a>
+        </figcaption>
+      </div>
+    </div>
+	</main>
 
 		<!--
 
@@ -54,6 +102,5 @@ let title = 'My Astro Site';
 
 		-->
 
-	</main>
 </body>
 </html>

@@ -1,0 +1,56 @@
+---
+// Component Imports
+import Navbar from '../layouts/Navbar.astro';
+// You can import components from any supported Framework here!
+
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" href={Astro.resolve('../styles/about.css')}>
+</head>
+<body>
+	<Navbar title="Simona Portfolio"></Navbar>
+	<main>
+      <div class="flex-container" style="align-items: center;">
+        <div class="flex-info">
+          <h3>
+            <span>Contact information</span>
+          </h3>
+          <p>
+            You can contact me by email: <a href="mailto:someone@yoursite.com">dumascusimona@gmail.com</a> or <a href="https://www.linkedin.com/in/simona-dumascu-4172411b0/">LinkedIn</a>.
+          </p>
+          <h3>
+            <span>Social Media</span>
+          </h3>
+          <p>
+              You can find me on <a href="https://www.artstation.com/simonadumascu">ArtStation</a> and <a href="https://www.instagram.com/dumascusimona/">Instagram</a>
+         </p>
+        </div>
+      </div>
+	</main>
+
+		<!--
+
+		You can also use imported framework components directly in your markup!
+		
+		Note: by default, these components are NOT interactive on the client.
+		The `:visible` directive tells Astro to make it interactive.
+		
+		See https://docs.astro.build/core-concepts/component-hydration/ 
+
+		-->
+
+</body>
+</html>
